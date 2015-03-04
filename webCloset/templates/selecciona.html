@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block head %}
+	
+{% endblock %}
+{% block body %}
+    <div>
+    <div>
+ {% if combinacion %}
+  <h2> La combinación elegida es: </h2>             
+    
+    <p>Camisa {{combinacion[0]}}, pantalón {{combinacion[1]}} y zapatos {{combinacion[2]}}</p>
+    
+{% else %}
+  <p>No hay prendas disponibles en el armario, debes reponer ropa</p>
+{% endif %}
+
+    </div>	   
+{% endblock %}

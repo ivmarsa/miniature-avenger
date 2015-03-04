@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block head %}
+    
+{% endblock %}
+{% block body %}
+
+  
+    <div>
+{% if misprendas %}
+  <h2> Listado de mis prendas </h2>
+  {% for prenda in misprendas %}             
+    
+    <p>{{prenda.tipo}} {{prenda.color}} con {{prenda.usos}}/{{prenda.limite}} usos</p>
+    
+{% endfor %}
+{% else %}
+  <p>No hay prendas</p>
+{% endif %}
+
+    
+ 
+  </div>	
+     
+{% endblock %}
